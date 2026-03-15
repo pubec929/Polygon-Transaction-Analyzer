@@ -1,0 +1,58 @@
+[
+	{
+		"tx_hash": "0x83a21e2c5f90953160fc6ca2d9c9d7b6af2ad237a27c124164504fb3ab9a7d89",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x802d371f41b4320297efab4287b9c745da9b87a7f72e4978304a2e752a7f17b0",
+		"shares": 251.0,
+		"usdc_amount": 2.51,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x352533202b58c02472f9cf27ed52b5d068ef688a96bc9781520172d13b27f60b",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x2a3c005bd838914c39699107eb6ca96069da516e17173c07dacb300d504eb43c",
+		"shares": 31.0,
+		"usdc_amount": 7.44,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x8285fe61f9ece8edf041637796f3f99032f3fcc3a7f45519cb03144dafb795aa",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x2a3c005bd838914c39699107eb6ca96069da516e17173c07dacb300d504eb43c",
+		"shares": 31.0,
+		"usdc_amount": 9.920000000000002,
+		"action": "SELL"
+	},
+	{
+		"tx_hash": "0xb73355dafd113db35277f504a640c4b857d639a8fe60c5ddef4df95d03143bef",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x2b7dbdd1033242caebba2d3251428cba1f7c81107592efbfe2e68826a11afb3b",
+		"shares": 5.0,
+		"usdc_amount": 2.2,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0xf5968ac8dce8b05b963bfa4ededbbf4dc0e05c4db49e106260ad0faf46116c51",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x350623932a9fef511351938bc946cc1e5ee60ac77d3ca3598be52e8c9f4211bd",
+		"shares": 101.0,
+		"usdc_amount": 54.54,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x19cd48b48142a95cdf4ceb2b71d39e2b870f45a7cc098378bac50c5c4b2d1b2a",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x53b4cd7f8f6824c6899366c6c9059c6f125aebf502b337d43451892b9bc93f46",
+		"shares": 81.0,
+		"usdc_amount": 29.16,
+		"action": "SELL"
+	},
+	{
+		"tx_hash": "0x9c6e047c6ccfc349d80bc875d827fb2522698b180de6f1e8d80736f982dee624",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x53b4cd7f8f6824c6899366c6c9059c6f125aebf502b337d43451892b9bc93f46",
+		"shares": 57.43,
+		"usdc_amount": 21.2491,
+		"action": "SELL"
+	}
+]
