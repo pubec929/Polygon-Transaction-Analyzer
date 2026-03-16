@@ -134,23 +134,42 @@ def parse_json(json_data, wallet):
     json_data = JSON_schema(**json_data)
 
     transactions: list[Transaction] = []
+
+    takerOrder = Order(**json_data.takerOrder) # type: ignore
+    if takerOrder.maker == wallet:
+        position_id = takerOrder.tokenId
+        usdc_amount = int(json_data.takerFillAmount) / PADDING
+        shares = (int(json_data.takerReceiveAmount) - int(json_data.takerFeeAmount)) / PADDING  
+        action = "BUY" if takerOrder.side == "0" else "SELL"
+        return [Transaction(0, position_id, shares, usdc_amount, action)]
+
     for i, obj in enumerate(json_data.makerOrders):
         order = Order(**obj) # type: ignore
         if order.maker.lower() != wallet:
             continue
         position_id = hex(int(order.tokenId))
-        shares = float(order.makerAmount) / PADDING
-        usdc_amount = float(order.takerAmount) / PADDING
         action = "BUY" if order.side == "0" else "SELL"
+        if action == "BUY":
+            shares = float(order.takerAmount) / PADDING
+            usdc_amount = float(order.makerAmount) / PADDING
+        else:
+            shares = float(order.makerAmount) / PADDING
+            usdc_amount = float(order.takerAmount) / PADDING
         transactions.append(Transaction(i, position_id, shares, usdc_amount, action))
-    
     # adjust filled shares
     for transaction in transactions:
-        filled_shares = float(json_data.makerFillAmounts[transaction.log_index]) / PADDING
-        if filled_shares != transaction.shares:
-            avg_price = transaction.usdc_amount / transaction.shares
-            transaction.shares = filled_shares
-            transaction.usdc_amount = avg_price * transaction.shares
+        avg_price = transaction.usdc_amount / transaction.shares
+        if transaction.action == "SELL":
+            filled_shares = float(json_data.makerFillAmounts[transaction.log_index]) / PADDING
+            if filled_shares != transaction.shares:
+                transaction.shares = filled_shares
+                transaction.usdc_amount = avg_price * transaction.shares
+        elif transaction.action == "BUY":
+            filled_usdc_amount = float(json_data.makerFillAmounts[transaction.log_index]) / PADDING
+            if filled_usdc_amount != transaction.usdc_amount:
+                transaction.usdc_amount = filled_usdc_amount
+                transaction.shares = transaction.usdc_amount / avg_price
+
     return transactions
     
 def load_tests():
@@ -166,6 +185,9 @@ def main():
     for hash in tx_hashes:
         json_logs = parse_calldata(get_calldata(hash))
         print(parse_json(json_logs, wallet))
+    # tx_hash = tx_hashes[-1]
+    # json_logs = parse_calldata(get_calldata(tx_hash))
+    # print(parse_json(json_logs, wallet))
 
 if __name__ == "__main__":
     main()
