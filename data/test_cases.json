@@ -54,5 +54,45 @@
 		"shares": 57.43,
 		"usdc_amount": 21.2491,
 		"action": "SELL"
+	},
+	{
+		"tx_hash": "0x4bd35242c6978fccd220f6c1ad3ade6e584a8efe5194ecab3c1973f7cf1bea04",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x23867bc47375cfc6b7c819b0a5077bd1884bc22dd5919a3b2783c530643fcc7e",
+		"usdc_amount": 0.8602,
+		"shares": 7.801270000000001,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x3f3bbf719ac8d16a49b27a82302edf37b34129a9ded55aea1589bd1f121a5d60",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0xc73cb2472b0a6f5632f1604e449da04aa586f22992c2fa21e61a8b1742534552",
+		"usdc_amount": 193.27,
+		"shares": 249.03189,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x4e77baa3e53b69ddb885dca032791a0009ee43ad9a8b24a5bd6f6bdc940000ff",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x23867bc47375cfc6b7c819b0a5077bd1884bc22dd5919a3b2783c530643fcc7e",
+		"usdc_amount": 10.682,
+		"shares": 106.60369,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0xa8839bd0033f413e61fdd2cfd9f81f02975ed90cb242c5eb07e9e2009a615f62",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x83cfe9a0499cfc029568d8cacba0fa94a6b67f1d41654e759d5270bc9eeef379",
+		"usdc_amount": 5.52,
+		"shares": 24.0,
+		"action": "BUY"
+	},
+	{
+		"tx_hash": "0x0949003f1fb592d83d88e8d4e2aba528282b43e3cf55d25219f6832415e98879",
+		"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+		"position_id": "0x6adfa2a2e9b157cbafa3cabe2fd8dba79e2e254fcca1940783bbe792380c02ec",
+		"usdc_amount": 4.5576,
+		"shares": 16.88,
+		"action": "BUY"
 	}
 ]

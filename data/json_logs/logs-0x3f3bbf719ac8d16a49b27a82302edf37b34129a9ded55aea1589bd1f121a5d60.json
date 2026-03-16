@@ -1,0 +1,77 @@
+{
+  "takerOrder": {
+    "salt": "186866500",
+    "maker": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+    "signer": "0xCb74d795d84cD5326348F97eacE80E59CCd162C6",
+    "taker": "0x0000000000000000000000000000000000000000",
+    "tokenId": "90117498121495377648460134249114462777688768578214510731212263899939441165650",
+    "makerAmount": "193270000",
+    "takerAmount": "251000000",
+    "expiration": "1773733765",
+    "nonce": "0",
+    "feeRateBps": "1000",
+    "side": "0",
+    "signatureType": "2",
+    "signature": "0x6b20efbe7224d7fca8c8f528ab0823570ff7caafe8a3f7c5103c77d9d5dd0c8d0eaca4290a89ed234125ef18630014e8ba955048f30d844bb838b291a937cd2d1c"
+  },
+  "makerOrders": [
+    {
+      "salt": "637182871",
+      "maker": "0xD80aCE15F3adeB0b6EeE3472b7cecd3ca27bc714",
+      "signer": "0xf68389Fbb223C052bc87aB94ff0f723a77f9A7b1",
+      "taker": "0x0000000000000000000000000000000000000000",
+      "tokenId": "59620332935059668312739117115341772851504305098471084011068392470561374008185",
+      "makerAmount": "47929700",
+      "takerAmount": "208390000",
+      "expiration": "0",
+      "nonce": "0",
+      "feeRateBps": "1000",
+      "side": "0",
+      "signatureType": "1",
+      "signature": "0x78c42423b10e369f034605c3b1aa907e1f38e7f50e2b860b11967ea8958cba183c89acc5ec4bf0c6f0ecbe257b66b1eb1792bce9458bd2354e9d5176cfdf88751c"
+    },
+    {
+      "salt": "460524801",
+      "maker": "0xD80aCE15F3adeB0b6EeE3472b7cecd3ca27bc714",
+      "signer": "0xf68389Fbb223C052bc87aB94ff0f723a77f9A7b1",
+      "taker": "0x0000000000000000000000000000000000000000",
+      "tokenId": "59620332935059668312739117115341772851504305098471084011068392470561374008185",
+      "makerAmount": "6837900",
+      "takerAmount": "29730000",
+      "expiration": "0",
+      "nonce": "0",
+      "feeRateBps": "1000",
+      "side": "0",
+      "signatureType": "1",
+      "signature": "0x8eb4d023acbd130a19680f0c78b71ca559cca5916b387bdba7677b78590d17da783fa328bf9c22811be844284c7ad0cb45fa6d87e919a76929ce3f7c243d7aa51c"
+    },
+    {
+      "salt": "356911060",
+      "maker": "0x32f4B0adDE3fe1b71902F76D470215F1B766b1A0",
+      "signer": "0x06A3e1b6d6AAfCffE29FC8e5BEFF26AdCB2d5745",
+      "taker": "0x0000000000000000000000000000000000000000",
+      "tokenId": "59620332935059668312739117115341772851504305098471084011068392470561374008185",
+      "makerAmount": "4600000",
+      "takerAmount": "20000000",
+      "expiration": "0",
+      "nonce": "0",
+      "feeRateBps": "1000",
+      "side": "0",
+      "signatureType": "1",
+      "signature": "0xc20c3fc18a502e0877cb8886714066f1905f8c0ac35791f58f482cf22610dca12a1b55ce5660af7b59ff508faaa1e434ffba5265ea1665e33e4b63e952d3ddaa1c"
+    }
+  ],
+  "takerFillAmount": "193270000",
+  "takerReceiveAmount": "251000000",
+  "makerFillAmounts": [
+    "47929700",
+    "6837900",
+    "2962400"
+  ],
+  "takerFeeAmount": "1968110",
+  "makerFeeAmounts": [
+    "0",
+    "0",
+    "0"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+	"takerOrder": {
+		"salt": "843612656",
+		"maker": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+		"signer": "0xCb74d795d84cD5326348F97eacE80E59CCd162C6",
+		"taker": "0x0000000000000000000000000000000000000000",
+		"tokenId": "16068561418204207527835101415698616215298710149914961467257395072323150662782",
+		"makerAmount": "22110000",
+		"takerAmount": "201000000",
+		"expiration": "1773733751",
+		"nonce": "0",
+		"feeRateBps": "1000",
+		"side": "0",
+		"signatureType": "2",
+		"signature": "0x0ce36d1f61ca9199d7b113c0ae3ddc2aef6b3ed42d44042ec1d8298ea5b0a0f604cf84a48d3e4e51e93b7d3ecea2a2e5aece6874ef1c5ec115840d1f91feb0b91b"
+	},
+	"makerOrders": [
+		{
+			"salt": "743203556",
+			"maker": "0x680b5ff4Bc5E6cf0Dc984c22dC5F8e550a3B3a79",
+			"signer": "0x180A3e3B32A9AC042a41420227F97833132dbc9F",
+			"taker": "0x0000000000000000000000000000000000000000",
+			"tokenId": "95090736369464152575167268131738258830494564623779840671593884023249977942250",
+			"makerAmount": "6959800",
+			"takerAmount": "7820000",
+			"expiration": "0",
+			"nonce": "0",
+			"feeRateBps": "1000",
+			"side": "0",
+			"signatureType": "1",
+			"signature": "0x2ae6b82f30d8b29ddc4413661e34f7242f476364c6d8616b2a638943ebb72d6011971f3419819a316c9112343f33630155989160b8c60c9d54d30064c69b963a1b"
+		}
+	],
+	"takerFillAmount": "860200",
+	"takerReceiveAmount": "7820000",
+	"makerFillAmounts": ["6959800"],
+	"takerFeeAmount": "18730",
+	"makerFeeAmounts": ["0"]
+}
