@@ -76,7 +76,7 @@ def calc_positions(trades: Trades):
 
 type Positions = dict[int, Position]
 
-def shutdown(trades: Trades):
+def shutdown(trades: Trades = []):
     print("shutting down gracefully")
 
     positions = calc_positions(trades)

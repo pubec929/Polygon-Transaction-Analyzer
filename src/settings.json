@@ -1,0 +1,13 @@
+{
+	"duration": 300,
+	"wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+	"scheduledStart": {
+		"isActive": false,
+		"startTime": "00:00:00"
+	},
+	"marketFilter": {
+		"isActive": false,
+		"market": "bitcoin",
+		"market_type": "5min"
+	}
+}

@@ -182,12 +182,12 @@ def load_tests():
 def main():
     from log_parser import tx_hashes
     wallet = "0x63ce342161250d705dc0b16df89036c8e5f9ba9a"
-    for hash in tx_hashes:
-        json_logs = parse_calldata(get_calldata(hash))
-        print(parse_json(json_logs, wallet))
-    # tx_hash = tx_hashes[-1]
-    # json_logs = parse_calldata(get_calldata(tx_hash))
-    # print(parse_json(json_logs, wallet))
+    # for hash in tx_hashes:
+    #     json_logs = parse_calldata(get_calldata(hash))
+    #     print(parse_json(json_logs, wallet))
+    tx_hash = tx_hashes[-1]
+    json_logs = parse_calldata(get_calldata(tx_hash))
+    print(parse_json(json_logs, wallet))
 
 if __name__ == "__main__":
     main()
