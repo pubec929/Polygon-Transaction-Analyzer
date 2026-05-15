@@ -33,11 +33,11 @@ WSS_URL = f"wss://polygon-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
 POLYMARKET_URL = "https://data-api.polymarket.com/positions"
 
 # WALLET = "0xe00740bce98a594e26861838885ab310ec3b548c"
-WALLET = "0x63ce342161250d705dc0b16df89036c8e5f9ba9a"
+WALLET = "0xb55fa1296e6ec55d0ce53d93b9237389f11764d4"
 WALLET_PADDED = f"000000000000000000000000{WALLET[2:]}"
 
 # Polymarket contract addresses
-CTF_EXCHANGE = "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E"
+CTF_EXCHANGE = "0xE111180000d2663C0091e4f400237545B87B996B"
 CONDITIONAL_TOKENS = "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
 USDC_CONTRACT = "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
 
@@ -130,8 +130,8 @@ class MempoolMonitor:
                # return
             
             print(tx_hash)
-            if "63ce342161250d705dc0b16df89036c8e5f9ba9a"  not in input_data:
-                #print("didnt find it")
+            if WALLET[2:]  not in input_data:
+                print("didnt find it")
                 #print(input_data)
                 return
             else:
@@ -238,7 +238,7 @@ async def monitor_trades():
             "method": "eth_subscribe",
             "params": [
                 "alchemy_pendingTransactions", 
-                { "toAddress": "0xe3f18acc55091e2c48d883fc8c8413319d4ab7b0" }
+                { "toAddress": "0xE111180000d2663C0091e4f400237545B87B996B" }
             ]
         }
         

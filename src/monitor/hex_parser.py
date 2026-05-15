@@ -8,8 +8,7 @@ from dataclasses import dataclass
 from typing import Literal
 
 def _words(hex_str: str) -> list[str]:
-    # raw = hex_str.removeprefix("0x")[8:]  # strip 4-byte selector
-    raw = hex_str.removeprefix("0x")  # strip 4-byte selector
+    raw = hex_str.removeprefix("0x")[8:]  # strip 4-byte selector
     return [raw[i:i+64] for i in range(0, len(raw), 64)]
 
 def _addr(word: str) -> str:
@@ -25,7 +24,6 @@ def _sig(words: list[str], w: int) -> str:
     return "0x" + words[w+14] + words[w+15] + words[w+16][:2]
 
 def _parse_order(words: list[str], w: int) -> dict:
-    print(words, w)
     return {
         "salt":          str(int(words[w],    16)),
         "maker":         _addr(words[w+1]),
@@ -183,14 +181,11 @@ def load_tests():
 
 def main():
     from log_parser import tx_hashes
-    wallet = "0xb55fa1296E6ec55D0cE53d93B9237389f11764d4"
-    # wallet = "0x63ce342161250d705dc0b16df89036c8e5f9ba9a"
+    wallet = "0x63ce342161250d705dc0b16df89036c8e5f9ba9a"
     # for hash in tx_hashes:
     #     json_logs = parse_calldata(get_calldata(hash))
     #     print(parse_json(json_logs, wallet))
-    # tx_hash = tx_hashes[-1]
-    tx_hash = "0x64bbfa73fd58aa88160fca9e7fbedaa0bebbb4452c65a387f5f2b8928b5cb477"
-    # tx_hash = "0xb73355dafd113db35277f504a640c4b857d639a8fe60c5ddef4df95d03143bef"
+    tx_hash = tx_hashes[-1]
     json_logs = parse_calldata(get_calldata(tx_hash))
     print(parse_json(json_logs, wallet))
 
